@@ -10,9 +10,9 @@
 
 ## Approach
 1. **EDA:** Identified metadata signals (missing company profile = 9x fraud rate)
-2. **Preprocessing:** TF-IDF vectorisation + one-hot encoding + stratified 70/15/15 split
+2. **Preprocessing:** TFIDF vectorisation + one hot encoding + stratified 70/15/15 split
 3. **Models:** Trained 6 classifiers (Logistic Regression, Naive Bayes, Linear SVM, Random Forest, Decision Tree, Voting Ensemble)
-4. **Evaluation:** F1-score (0.8327 on test set), precision-recall analysis, error analysis
+4. **Evaluation:** F1score (0.8327 on test set), precision recall analysis, error analysis
 5. **Reflection:** Ethical considerations, interpretability trade-offs, limitations
 
 ## Results
@@ -32,7 +32,7 @@ jupyter notebook 25201173_FakeJobDetection.ipynb
 ```
 
 ## Key Insights
-- Class imbalance requires F1-score, not accuracy
+- Class imbalance requires F1 score, not accuracy
 - Missing metadata (company profile, logo) is the strongest fraud signal
 - Voting ensemble outperforms individually tuned linear models
 - Model struggles with sophisticated, well-written fraud
